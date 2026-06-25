@@ -1,0 +1,108 @@
+{
+  "auth": {
+    "login": {
+      "title": "Sign In",
+      "description": "Sign in to your account",
+      "submit": { "$": "Sign In", "loading": "Processing..." },
+      "toast": {
+        "success": "Signed in successfully!",
+        "error": "Failed to sign in"
+      },
+      "link": { "register": "Don't have an account?" }
+    },
+    "register": {
+      "title": "Create an Account",
+      "description": "Start sharing images instantly",
+      "submit": { "$": "Create Account", "loading": "Processing..." },
+      "toast": { "success": "Account created!", "error": "Failed to sign up" },
+      "link": { "login": "Already have an account?" }
+    },
+    "google": "Continue with Google",
+    "divider": "Or continue with",
+    "welcome-back": "Welcome back",
+    "create-account": "Create an Account"
+  },
+  "field": {
+    "email": { "$": "Email", "placeholder": "you@example.com" },
+    "password": {
+      "$": "Password",
+      "placeholder": { "$": "Enter your password" }
+    },
+    "name": { "$": "Name", "placeholder": "Your name" }
+  },
+  "sidebar": {
+    "nav": {
+      "overview": "Overview",
+      "images": "Images",
+      "tokens": "Tokens"
+    },
+    "settings": "Settings",
+    "sign-out": "Sign out",
+    "user": "User",
+    "brand": { "subtitle": "Image Sharing" }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "description": "Manage your images",
+    "search": "Search images...",
+    "upload": "Upload",
+    "upload-image": "Upload Image",
+    "copy-link": "Copy Link",
+    "previous": "Previous",
+    "next": "Next",
+    "page-of": "Page {page} of {total}",
+    "empty": {
+      "title": "No images yet",
+      "description": "Upload your first image to start sharing"
+    },
+    "toast": {
+      "upload-success": "Image uploaded!",
+      "upload-error": "Upload failed",
+      "delete-success": "Image deleted",
+      "delete-error": "Failed to delete image",
+      "link-copied": "Link copied!"
+    }
+  },
+  "shared": {
+    "views": "{count} views",
+    "dimensions": "{width}×{height}"
+  },
+  "landing": {
+    "badge": "Fast & Simple Image Sharing",
+    "hero": {
+      "title": "Share images",
+      "title-accent": "with a single link",
+      "description": "Upload your images, get a shareable link instantly. No hassle, no bloat. Just pure image sharing with automatic compression.",
+      "start-sharing": "Start Sharing",
+      "sign-in": "Sign In",
+      "get-started": "Get Started"
+    },
+    "features": {
+      "upload": {
+        "title": "Drag & Drop Upload",
+        "desc": "Upload images instantly with drag-and-drop or file picker."
+      },
+      "share": {
+        "title": "Shareable Links",
+        "desc": "Every image gets a unique link. Share it anywhere."
+      },
+      "dashboard": {
+        "title": "Dashboard",
+        "desc": "Manage all your images from one central dashboard."
+      },
+      "private": {
+        "title": "Private by Default",
+        "desc": "Only you can manage your images. Share only what you choose."
+      },
+      "compress": {
+        "title": "Automatic Compression",
+        "desc": "Images over 5MB are compressed. No quality loss you'll notice."
+      },
+      "quality": {
+        "title": "Original Quality",
+        "desc": "Original dimensions preserved. No cropping or resizing."
+      }
+    },
+    "footer": "Simple Image Sharing"
+  }
+}

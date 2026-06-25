@@ -1,0 +1,105 @@
+{
+  "auth": {
+    "login": {
+      "title": "Masuk",
+      "description": "Masuk ke akun Anda",
+      "submit": { "$": "Masuk", "loading": "Memproses..." },
+      "toast": { "success": "Berhasil masuk!", "error": "Gagal masuk" },
+      "link": { "register": "Belum punya akun?" }
+    },
+    "register": {
+      "title": "Buat Akun",
+      "description": "Mulai berbagi gambar secara instan",
+      "submit": { "$": "Buat Akun", "loading": "Memproses..." },
+      "toast": { "success": "Akun berhasil dibuat!", "error": "Gagal daftar" },
+      "link": { "login": "Sudah punya akun?" }
+    },
+    "google": "Lanjutkan dengan Google",
+    "divider": "Atau lanjutkan dengan",
+    "welcome-back": "Selamat datang kembali",
+    "create-account": "Buat Akun Baru"
+  },
+  "field": {
+    "email": { "$": "Email", "placeholder": "nama@email.com" },
+    "password": {
+      "$": "Kata Sandi",
+      "placeholder": { "$": "Masukkan kata sandi" }
+    },
+    "name": { "$": "Nama", "placeholder": "Nama lengkap" }
+  },
+  "sidebar": {
+    "nav": {
+      "overview": "Beranda",
+      "images": "Gambar",
+      "tokens": "Token"
+    },
+    "settings": "Pengaturan",
+    "sign-out": "Keluar",
+    "user": "Pengguna",
+    "brand": { "subtitle": "Bagi Gambar" }
+  },
+  "dashboard": {
+    "title": "Dasbor",
+    "description": "Kelola gambar Anda",
+    "search": "Cari gambar...",
+    "upload": "Unggah",
+    "upload-image": "Unggah Gambar",
+    "copy-link": "Salin Tautan",
+    "previous": "Sebelumnya",
+    "next": "Selanjutnya",
+    "page-of": "Halaman {page} dari {total}",
+    "empty": {
+      "title": "Belum ada gambar",
+      "description": "Unggah gambar pertama Anda untuk mulai berbagi"
+    },
+    "toast": {
+      "upload-success": "Gambar berhasil diunggah!",
+      "upload-error": "Gagal mengunggah",
+      "delete-success": "Gambar berhasil dihapus",
+      "delete-error": "Gagal menghapus gambar",
+      "link-copied": "Tautan disalin!"
+    }
+  },
+  "shared": {
+    "views": "{count} dilihat",
+    "dimensions": "{width}×{height}"
+  },
+  "landing": {
+    "badge": "Berbagi Gambar Cepat & Sederhana",
+    "hero": {
+      "title": "Bagikan gambar",
+      "title-accent": "dengan satu tautan",
+      "description": "Unggah gambar Anda, dapatkan tautan yang bisa dibagikan secara instan. Tanpa ribet, tanpa hambatan. Berbagi gambar murni dengan kompresi otomatis.",
+      "start-sharing": "Mulai Berbagi",
+      "sign-in": "Masuk",
+      "get-started": "Mulai"
+    },
+    "features": {
+      "upload": {
+        "title": "Upload Drag & Drop",
+        "desc": "Unggah gambar secara instan dengan drag-and-drop atau pemilih file."
+      },
+      "share": {
+        "title": "Tautan yang Dapat Dibagikan",
+        "desc": "Setiap gambar mendapat tautan unik. Bagikan di mana saja."
+      },
+      "dashboard": {
+        "title": "Dasbor",
+        "desc": "Kelola semua gambar Anda dari satu dasbor terpusat."
+      },
+      "private": {
+        "title": "Pribad Secara Default",
+        "desc": "Hanya Anda yang dapat mengelola gambar. Bagikan hanya yang Anda pilih."
+      },
+      "compress": {
+        "title": "Kompresi Otomatis",
+        "desc": "Gambar di atas 5MB dikompresi. Tanpa mengurangi kualitas yang Anda sadari."
+      },
+      "quality": {
+        "title": "Kualitas Asli",
+        "desc": "Dimensi asli dipertahankan. Tanpa pemotongan atau pengubahan ukuran."
+      }
+    },
+    "footer": "Berbagi Gambar Sederhana"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "auth": {
+    "login": {
+      "title": "ログイン",
+      "description": "アカウントにログイン",
+      "submit": { "$": "ログイン", "loading": "処理中..." },
+      "toast": {
+        "success": "ログインしました！",
+        "error": "ログインに失敗しました"
+      },
+      "link": { "register": "アカウントをお持ちでないですか？" }
+    },
+    "register": {
+      "title": "アカウント作成",
+      "description": "すぐに画像を共有しましょう",
+      "submit": { "$": "アカウント作成", "loading": "処理中..." },
+      "toast": {
+        "success": "アカウントを作成しました！",
+        "error": "登録に失敗しました"
+      },
+      "link": { "login": "すでにアカウントをお持ちですか？" }
+    },
+    "google": "Googleで続行",
+    "divider": "または次で続行",
+    "welcome-back": "おかえりなさい",
+    "create-account": "アカウント作成"
+  },
+  "field": {
+    "email": { "$": "メールアドレス", "placeholder": "name@email.com" },
+    "password": {
+      "$": "パスワード",
+      "placeholder": { "$": "パスワードを入力" }
+    },
+    "name": { "$": "名前", "placeholder": "氏名" }
+  },
+  "sidebar": {
+    "nav": {
+      "overview": "概要",
+      "images": "画像",
+      "tokens": "トークン"
+    },
+    "settings": "設定",
+    "sign-out": "ログアウト",
+    "user": "ユーザー",
+    "brand": { "subtitle": "画像共有" }
+  },
+  "dashboard": {
+    "title": "ダッシュボード",
+    "description": "画像を管理",
+    "search": "画像を検索...",
+    "upload": "アップロード",
+    "upload-image": "画像をアップロード",
+    "copy-link": "リンクをコピー",
+    "previous": "前へ",
+    "next": "次へ",
+    "page-of": "{page} / {total}ページ",
+    "empty": {
+      "title": "まだ画像がありません",
+      "description": "最初の画像をアップロードして共有を始めましょう"
+    },
+    "toast": {
+      "upload-success": "画像をアップロードしました！",
+      "upload-error": "アップロードに失敗しました",
+      "delete-success": "画像を削除しました",
+      "delete-error": "画像の削除に失敗しました",
+      "link-copied": "リンクをコピーしました！"
+    }
+  },
+  "shared": {
+    "views": "{count} ビュー",
+    "dimensions": "{width}×{height}"
+  },
+  "landing": {
+    "badge": "高速＆シンプルな画像共有",
+    "hero": {
+      "title": "画像を共有",
+      "title-accent": "ひとつのリンクで",
+      "description": "画像をアップロードして、すぐに共有可能なリンクを取得。面倒なことは一切なし。自動圧縮でシンプルな画像共有。",
+      "start-sharing": "共有を始める",
+      "sign-in": "ログイン",
+      "get-started": "始める"
+    },
+    "features": {
+      "upload": {
+        "title": "ドラッグ＆ドロップ",
+        "desc": "ドラッグ＆ドロップまたはファイル選択で即座にアップロード。"
+      },
+      "share": {
+        "title": "共有可能なリンク",
+        "desc": "すべての画像にユニークなリンクが付与されます。どこでも共有可能。"
+      },
+      "dashboard": {
+        "title": "ダッシュボード",
+        "desc": "すべての画像をひとつのダッシュボードで管理。"
+      },
+      "private": {
+        "title": "デフォルトでプライベート",
+        "desc": "あなただけが画像を管理できます。共有したいものだけを共有。"
+      },
+      "compress": {
+        "title": "自動圧縮",
+        "desc": "5MB以上の画像は圧縮されます。品質の低下は気になりません。"
+      },
+      "quality": {
+        "title": "オリジナル品質",
+        "desc": "元の寸法はそのまま。トリミングやリサイズは行われません。"
+      }
+    },
+    "footer": "シンプルな画像共有"
+  }
+}

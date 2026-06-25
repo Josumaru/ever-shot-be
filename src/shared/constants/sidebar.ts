@@ -1,0 +1,2 @@
+export const SIDEBAR_BRAND_NAME = "EVERSHOT";
+export const SIDEBAR_DEFAULT_INITIALS = "ES";
