@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { Suspense, useEffect, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
-import { Copy, Check, ExternalLink } from "lucide-react";
+import { Copy, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import {
@@ -13,7 +13,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-export default function AuthorizeSuccessPage() {
+function AuthorizeSuccessContent() {
   const searchParams = useSearchParams();
   const key = searchParams.get("key") ?? "";
   const redirectUri = searchParams.get("redirect_uri");
@@ -72,5 +72,19 @@ export default function AuthorizeSuccessPage() {
         </CardContent>
       </Card>
     </div>
+  );
+}
+
+export default function AuthorizeSuccessPage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="min-h-screen flex items-center justify-center p-4 bg-background">
+          <div className="size-8 animate-spin rounded-full border-4 border-muted border-t-primary" />
+        </div>
+      }
+    >
+      <AuthorizeSuccessContent />
+    </Suspense>
   );
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback } from "react";
+import { Suspense, useCallback } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { toast } from "sonner";
 import { ImageIcon, Loader2 } from "lucide-react";
@@ -26,7 +26,7 @@ function getInitials(name: string | undefined | null): string {
     .slice(0, 2);
 }
 
-export default function AuthorizePage() {
+function AuthorizeContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const appName = searchParams.get("app_name") ?? "Screenshot Tool";
@@ -127,5 +127,19 @@ export default function AuthorizePage() {
         </CardContent>
       </Card>
     </div>
+  );
+}
+
+export default function AuthorizePage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="min-h-screen flex items-center justify-center">
+          <Loader2 className="size-6 animate-spin text-muted-foreground" />
+        </div>
+      }
+    >
+      <AuthorizeContent />
+    </Suspense>
   );
 }

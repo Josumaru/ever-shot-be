@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { toast } from "sonner";
@@ -20,7 +20,7 @@ import {
 import { useTranslation } from "@/lib/i18n";
 import { I18N } from "@/shared/constants/i18n-keys";
 
-export default function LoginPage() {
+function LoginContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const redirectTo = searchParams.get("redirect") || "/dashboard";
@@ -156,5 +156,19 @@ export default function LoginPage() {
         </CardContent>
       </Card>
     </div>
+  );
+}
+
+export default function LoginPage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="flex min-h-screen items-center justify-center">
+          <Loader2 className="size-6 animate-spin text-muted-foreground" />
+        </div>
+      }
+    >
+      <LoginContent />
+    </Suspense>
   );
 }
